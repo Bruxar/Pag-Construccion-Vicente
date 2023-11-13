@@ -1,0 +1,374 @@
+/*Variables*/
+:root{
+    --cyan: #377F8E;
+    --gris: #434445;
+    --celeste: #96C2DB;
+}
+
+/*Globales*/
+html, body{
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    font-family: 'Darker Grotesque', sans-serif;
+    scroll-behavior: smooth;
+}
+a{
+    text-decoration: none;
+}
+h1{
+    font-size: 4rem;
+    font-weight: 700;
+}
+p{
+    font-size: 1.2em;
+    font-weight: 500;
+}
+
+/*Header*/
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.header-secciones{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.header-secciones a{
+    color: var(--cyan);
+    font-weight: 700;
+    transition: .5s;
+}
+.header-secciones a:hover{
+    color: var(--celeste)
+}
+
+.contenedor-boton {
+    background-color: var(--cyan);
+    padding: .6em;
+    transition: .5s;
+    border-radius: .2em;
+    border: 1px solid var(--cyan);
+    overflow: hidden; /* Añadir overflow: hidden para crear un contexto de apilamiento */
+}
+
+.contenedor-boton:hover {
+    background-color: white;
+    cursor: pointer;
+}
+
+.contenedor-boton:hover .boton {
+    color: var(--cyan);
+}
+
+.contenedor-boton .boton {
+    font-size: 1.2rem;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+    transition: .5s;
+}
+
+/*Hero*/
+.hero{
+    background-image: url("./images/trabajador.png");
+    opacity: .8;
+    height: 50em;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+
+.contenido-hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .6);
+    height: 100%;
+    padding: 0 20em;
+}
+
+.contenido-hero h1{
+    color: white;
+    text-align: center;
+    margin-bottom: .2rem;
+}
+.contenido-hero p{
+    color: white;
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.contenido-hero.contenedor-boton{
+    color: white;
+}
+
+.info{
+    width:60%;
+}
+
+@media (max-width: 1025px) {
+
+    .contenido-hero{
+        padding: 0;
+    }
+    .info{
+        width: 80%;
+    }
+    .info h1{
+        font-size: 3rem;
+    }
+    .info p{
+        font-size: 1rem;
+    }
+}
+
+/*Contenedor Gris*/
+
+.contenedor-gris{
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2em;
+    background-color: #E0E0E0;
+}
+
+.contenedor-gris p{
+    width: 80%;
+    text-align: center;
+}
+
+@media (max-width: 952px) {
+    .contenedor-gris p{
+    width: 100%;
+    font-size: 1em;
+}
+}
+@media (max-width: 528px) {
+    .contenedor-gris p{
+        font-size: .8em;
+    }
+}
+
+/*Servicios*/
+.servicios {
+    display: flex;
+    flex-direction: column;
+    margin: 1em 0;
+}
+
+.servicios .encabezado, h1, p {
+    text-align: start;
+    margin: 0;
+}
+
+.servicios .encabezado {
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 2em 0;
+    padding: 1em;
+}
+
+.cuadro-servicio {
+    width: 22%;
+    height: 100%;
+    padding: .6em;
+    box-sizing: border-box; /* Añadir box-sizing para incluir el padding en el ancho y alto */
+
+}
+
+.servicio-imagen {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.info{
+ width: 100%;
+}
+.info h2{
+    color: var(--cyan);
+}
+.info p{
+    font-size: 1.3em;
+}
+
+/* Media queries para responsividad */
+
+@media screen and (max-width: 1200px) {
+    .cuadro-servicio {
+        width: 45%;
+        margin: 2.5%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .cuadro-servicio {
+        width: 100%;
+        margin: 0;
+    }
+    .info, h1, p{
+        text-align: center;
+    }
+}
+
+/*Grid*/
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3em;
+    justify-content: center;
+    background-color: #E0E0E0;
+  }
+  
+  /* Create four equal columns that sits next to each other */
+  .column {
+    flex: 30%;
+    max-width: 33%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 10px;
+    vertical-align: middle;
+    width: 100%;
+    border-radius: 5px;
+  }
+  
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 800px) {
+    .column {
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+  /*inputs*/
+  .reserva{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 80%;
+  }
+
+  .reserva-input h1, p{
+    text-align: start;
+  }
+
+  .llamada h1 {
+    display: flex;
+    align-items: center;
+}
+
+.llamada h1 img {
+    margin: 15px 0 0 10px; /* Ajusta el margen izquierdo del icono según sea necesario */
+}
+
+  .contenedor-input{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .input-group{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .input-group ,input, textarea{
+    width: 97%;
+  }
+
+  .input-group label{
+    margin-bottom: .3em;
+    color: var(--cyan);
+    font-weight: 700;
+    font-size: medium;
+  }
+
+  .input{
+    border: 1px solid var(--cyan);
+    border-radius: 5px;
+  }
+
+  .imagen img{
+    width: 300px;
+    height: 500px;
+  }
+
+  .reserva-input .contenedor-boton{
+    margin-top: 1em;
+    width: 5em;
+    text-align: center;
+  }
+.separacion{
+    border-top: 2px solid var(--cyan);
+    height: .1px;
+    width: 10em;
+    padding: 0;
+    margin: 5px 0 5px 0;
+}
+
+@media (max-width: 925px) {
+    .reserva{
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        margin-top: 5em;
+    }
+    .contenedor-input{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .reserva-input{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 5em;
+    }
+    .reserva-input h1, p{
+        text-align: center;
+        line-height: 1.1em;
+      }
+}
+
+@media (max-width: 545px) {
+    .llamada h1 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .llamada h1 img {
+        margin: 10px 0 0 10px; /* Ajusta el margen izquierdo del icono según sea necesario */
+    }
+}

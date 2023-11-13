@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <h2>Logo</h2>
+        </div>
+        <div class="header-secciones">
+            <a class="texto-servicio" href="#slide-1">Sobre Nosotors</a>
+            <a class="texto-servicio" href="#slide-2">Servicios</a>
+            <a class="texto-servicio" href="#slide-3">Galeria</a>
+            <a class="texto-servicio" href="#slide-4">Reserva</a>
+        </div>
+        <div class="contenedor-boton">
+            <a class="boton" href="#slide-4">contáctanos</a>
+        </div>
+    </header>
+
+    <section class="hero" id="slide-1">
+        <div class="contenido-hero">
+            <div class="info">
+                <h1>Construimos tus sueños</h1>
+                <p>Nos especializamos en construir proyectos de todos los tamaños
+                    y nos esforzamos por hacer realidad tu visión. Desde el principio
+                    hasta el final, nuestro equipo trabajará contigo en cada paso del
+                    camino para asegurarnos de que nuestros servicios cumplan con tus expectativas más altas.
+                    <br>¡Permítenos ayudarte a construir el sueño que siempre has deseado!
+                </p>
+            </div>
+            <div class="contenedor-boton">
+                <a class="boton" href="">Comenzar</a>
+            </div>
+        </div>
+    </section>
+    <div class="contenedor-gris">
+        <p>En nuestra empresa de construcción, nos comprometemos a proporcionar
+            un trabajo de calidad superior que cumpla con todas sus expectativas. Nuestro
+            equipo de constructores experimentados lleva años en la industria, entregando
+            resultados que superan las expectativas de los clientes.</p>
+    </div>
+
+    <section class="servicios" id="slide-2">
+        <div class="encabezado">
+            <h1>Servicios</h1>
+            <p>¡Todos nuestros servicios están disponibles para ti en este momento!</p>
+        </div>
+
+        <div class="contenedor-servicios">
+            <div class="cuadro-servicio">
+                <img class="servicio-imagen" src="./images/servicio1.png" alt="servicio1">
+                <div class="info">
+                    <h2>Construcción de edificios</h2>
+                    <p>
+                        Nuestra empresa de construcción ofrece servicios
+                        profesionales de construcción de edificios, brindando
+                        mano de obra de calidad para una amplia gama de proyectos.
+                    </p>
+                </div>
+            </div>
+            <div class="cuadro-servicio">
+                <img class="servicio-imagen" src="./images/servicio4.png" alt="servicio2">
+                <div class="info">
+                    <h2>Renovación del hogar</h2>
+                    <p>
+                        Ofrecemos servicios de renovación de viviendas de
+                        calidad para todo tipo de proyectos, desde remodelaciones
+                        a gran escala hasta pequeñas reparaciones.
+                    </p>
+                </div>
+            </div>
+            <div class="cuadro-servicio">
+                <img class="servicio-imagen" src="./images/servicio2.png" alt="servicio3">
+                <div class="info">
+                    <h2>Pintura</h2>
+                    <p>
+                        Servicio de pintura para proyectos de construcción
+                        que ofrece calidad profesional y resultados rápidos.
+                    </p>
+                </div>
+            </div>
+            <div class="cuadro-servicio">
+                <img class="servicio-imagen" src="./images/servicio3.png" alt="servicio4">
+                <div class="info">
+                    <h2>Mampostería</h2>
+                    <p>
+                        Servicio de albañilería para una empresa de construcción
+                        especializada en trabajos de piedra, ladrillo y bloque.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="row" id="slide-3">
+        <div class="column">
+            <img src="./images/grid4.png" alt="grid1">
+        </div>
+        <div class="column">
+            <img src="./images/grid3.png" alt="grid3">
+            <img src="./images/servicio2.png" alt="">
+        </div>
+        <div class="column">
+            <img src="./images/grid2.png" alt="grid2">
+            <img src="./images/servicio1.png" alt="">
+        </div>
+    </div>
+
+    <section class="reserva" id="slide-4">
+        <div class="reserva-input">
+            <div class="llamada">
+                <h1>
+                    Llámame de vuelta
+                    <img src="./images/icons8-teléfono-desconectado-64.png" alt="phone">
+                </h1>
+            </div>
+            <div class="separacion"></div>
+            <p>¡Háganos saber y le llamaremos tan pronto como sea posible!</p>
+            <div class="contenedor-input">
+                <div class="input-group">
+                    <label for="nombre" class="sr-only">Nombre</label>
+                    <input id="nombre" class="input" type="text" placeholder="Nombre">
+
+                    <label for="apellido" class="sr-only">Apellido</label>
+                    <input id="apellido" class="input" type="text" placeholder="Apellido">
+                </div>
+                <div class="input-group">
+                    <label for="correo" class="sr-only">Correo electrónico</label>
+                    <input id="correo" class="input" type="email" placeholder="Correo electrónico">
+                </div>
+                <div class="input-group">
+                    <label for="telefono" class="sr-only">Teléfono</label>
+                    <input id="telefono" class="input" type="number" placeholder="Teléfono">
+                </div>
+                <div class="input-group">
+                    <label for="comentarios" class="sr-only">Comentarios</label>
+                    <textarea id="comentarios" name="comentarios" rows="6" cols="33"
+                        placeholder="Escribe tus comentarios aquí"></textarea>
+                </div>
+            </div>
+
+            <div class="contenedor-boton">
+                <a class="boton" href="">Enviar</a>
+            </div>
+        </div>
+        <div class="imagen">
+            <img src="./images/pngwing.com.png" alt="reserva">
+        </div>
+    </section>
+
+</body>
+
+</html>
