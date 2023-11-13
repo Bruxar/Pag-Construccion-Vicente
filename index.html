@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Darker+Grotesque:wght@300;400;700&display=swap"
@@ -18,15 +20,18 @@
         <div class="logo">
             <h2>Logo</h2>
         </div>
-        <div class="header-secciones">
+        <div class="header-secciones" id="menu">
             <a class="texto-servicio" href="#slide-1">Sobre Nosotors</a>
             <a class="texto-servicio" href="#slide-2">Servicios</a>
             <a class="texto-servicio" href="#slide-3">Galeria</a>
             <a class="texto-servicio" href="#slide-4">Reserva</a>
+            <div class="contenedor-boton">
+                <a class="boton" href="#slide-4">contáctanos</a>
+            </div>
         </div>
-        <div class="contenedor-boton">
-            <a class="boton" href="#slide-4">contáctanos</a>
-        </div>
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        
     </header>
 
     <section class="hero" id="slide-1">

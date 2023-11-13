@@ -73,6 +73,59 @@ header{
     transition: .5s;
 }
 
+.menu-btn{
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 2em;
+    }
+
+    .header-secciones {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+        width: 100%;
+    }
+
+    .header-secciones.show {
+        display: flex;
+    }
+
+    .menu-btn {
+        display: block;
+        font-size: 24px;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+}
+
+/* Estilos para la transición del orden de los elementos en el menú colapsable */
+@media only screen and (max-width: 600px) {
+    .header-secciones {
+        transition: flex-direction 0.5s;
+    }
+
+    .logo {
+        transition: order 0.5s;
+    }
+
+    header.column , .column { /* Cambio aquí */
+        flex-direction: column;
+        gap:1em;
+    }
+
+    .header-secciones.row {
+        flex-direction: row;
+    }
+}
+
 /*Hero*/
 .hero{
     background-image: url("./images/trabajador.png");
