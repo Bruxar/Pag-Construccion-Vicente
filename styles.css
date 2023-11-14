@@ -33,10 +33,15 @@ header{
     justify-content: space-evenly;
 }
 
+.logo img{
+    height: 4em;
+    margin: .5em 0;
+}
+
 .header-secciones{
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 1.4rem;
 }
 .header-secciones a{
     color: var(--cyan);
@@ -119,6 +124,7 @@ header{
     header.column , .column { /* Cambio aquí */
         flex-direction: column;
         gap:1em;
+        padding: 2em;
     }
 
     .header-secciones.row {
@@ -129,6 +135,7 @@ header{
 /*Hero*/
 .hero{
     background-image: url("./images/trabajador.png");
+
     opacity: .8;
     height: 50em;
     width: 100%;
@@ -162,22 +169,28 @@ header{
 }
 
 .info{
-    width:60%;
+    width:80%;
 }
 
 @media (max-width: 1025px) {
 
     .contenido-hero{
-        padding: 0;
+        padding: 0 1em;
     }
     .info{
-        width: 80%;
+        width:80%;
     }
     .info h1{
-        font-size: 3rem;
+        font-size: 2rem;
     }
     .info p{
-        font-size: 1rem;
+        font-size: .5rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero{
+        background-position:40%;
     }
 }
 
