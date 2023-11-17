@@ -32,12 +32,13 @@ header{
     align-items: center;
     justify-content: space-evenly;
     height: 6em;
+
 }
 
 .logo img{
     height: 4em;
     margin: .5em 0;
-    transition: 1.5s ease;
+    transition: .4s ease-out;
 }
 
 .logo img:hover{
@@ -95,7 +96,8 @@ header{
         justify-content: space-between;
         align-items: center;
         padding: 0 2em;
- 
+        transition: height 0.3s ease;
+        overflow: hidden;
     }
 
     .header-secciones {
@@ -125,7 +127,7 @@ header{
     }
 
     .logo {
-        transition: order 0.5s;
+        transition: ease 0.3s;
     }
 
     header.column , .column { /* Cambio aquí */
@@ -303,43 +305,34 @@ header{
 
 /*Grid*/
 
-.row {
+.fila {
     display: flex;
     flex-wrap: wrap;
     padding: 3em;
     justify-content: center;
     background-color: #E0E0E0;
-  }
-  
-  /* Create four equal columns that sits next to each other */
-  .column {
+}
+
+.columna {
     flex: 30%;
     max-width: 33%;
     padding: 0 4px;
-  }
-  
-  .column img {
+}
+
+.columna img {
     margin-top: 10px;
     vertical-align: middle;
     width: 100%;
     border-radius: 5px;
-  }
-  
-  /* Responsive layout - makes a two column-layout instead of four columns */
-  @media screen and (max-width: 800px) {
-    .column {
-      flex: 50%;
-      max-width: 50%;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .columna {
+        flex: 100%;
+        max-width: 100%;
     }
-  }
-  
-  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-  @media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-  }
+}
 
   /*inputs*/
   .reserva{
