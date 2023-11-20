@@ -403,6 +403,10 @@ header{
     flex-direction: column;
   }
 
+  .input-group input{
+    padding: .5em;
+  }
+
   .input-group ,input, textarea{
     width: 97%;
   }
@@ -414,16 +418,16 @@ header{
     font-size: medium;
   }
 
-  .input{
+  .input, textarea{
     border: 1px solid var(--cyan);
     border-radius: 5px;
+    resize: none;
   }
 
-  .imagen img{
+  .imagen-reserva img{
     width: 300px;
     height: 500px;
   }
-
   .reserva-input .contenedor-boton{
     margin-top: 1em;
     width: 5em;
@@ -460,6 +464,9 @@ header{
     .reserva-input h1, p{
         text-align: center;
         line-height: 1.1em;
+      }
+      .imagen-reserva img{
+        margin-bottom: 5em;
       }
 }
 
