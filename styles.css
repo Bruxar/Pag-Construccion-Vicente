@@ -314,6 +314,7 @@ header{
 }
 .info p{
     font-size: 1.3em;
+    text-align: start;
 }
 
 @media screen and (max-width: 1200px) {
@@ -331,10 +332,10 @@ header{
     .cuadro-servicio .servicio-imagen{
         height: 40vh;
     }
-    .info, h1, p{
+    .info h2,
+    .info p {
         text-align: center;
     }
-    .
 }
 
 /*Grid*/
