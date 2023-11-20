@@ -160,7 +160,7 @@ header{
     justify-content: center;
     background-color: rgba(0, 0, 0, .6);
     height: 100%;
-    padding: 0 20em;
+    padding: 0 10em;
 }
 
 .contenido-hero h1{
@@ -178,30 +178,35 @@ header{
     color: white;
 }
 
-.info{
-    width:80%;
-}
-
 @media (max-width: 1025px) {
 
     .contenido-hero{
-        padding: 0 1em;
+        padding: 0 2em;
     }
-    .info{
-        width:80%;
+    .info-hero h1{
+        font-size: 2.5em;
     }
-    .info h1{
-        font-size: 2rem;
-    }
-    .info p{
-        font-size: .5rem;
+    .info-hero p{
+        font-size: 1em;
     }
 }
 
 @media (max-width: 450px) {
     .hero{
-        background-position:40%;
+        background-position:18%;
     }
+    .contenido-hero{
+        padding: 0 2em;
+    }
+    .info-hero h1{
+        font-size: 2em;
+    }
+    .info-hero p{
+        font-size: 1em;
+        font-weight: 500;
+        letter-spacing: .1em;
+    }
+
 }
 
 /*Contenedor Gris*/
@@ -258,7 +263,7 @@ header{
     justify-content: space-evenly;
     gap: 2em 0;
     padding: 1em;
-}
+    height: 100%;}
 
 .cuadro-servicio {
     width: 22%;
@@ -271,7 +276,7 @@ header{
 .servicio-imagen {
     object-fit: cover;
     width: 100%;
-    height: 100%;
+    height: 20vh;
 }
 
 .info{
