@@ -191,20 +191,28 @@ header{
     }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 600px) {
     .hero{
         background-position:18%;
     }
     .contenido-hero{
         padding: 0 2em;
     }
+    .info-hero{
+        margin-bottom: 1em;
+    }
     .info-hero h1{
-        font-size: 2em;
+        font-size: 3em;
+        line-height: 1em;
+        margin-bottom: .4em;
     }
     .info-hero p{
         font-size: 1em;
         font-weight: 500;
-        letter-spacing: .1em;
+        letter-spacing: .4px;
+    }
+    .texto-none-450{
+        display: none;
     }
 
 }
@@ -212,10 +220,11 @@ header{
 /*Contenedor Gris*/
 
 .contenedor-gris{
-    height: 10em;
+    height: 14em;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
     padding: 2em;
     background-color: #E0E0E0;
 }
@@ -223,6 +232,18 @@ header{
 .contenedor-gris p{
     width: 80%;
     text-align: center;
+    color: black;
+}
+
+.icono-contenedor-gris img{
+    margin-top: 1.2em;
+    height: 2.3em;
+    color: #ffdf00;
+    transition: .2s linear;
+}
+
+.icono-contenedor-gris img:hover{
+    -webkit-filter: brightness(1.2);
 }
 
 @media (max-width: 952px) {
@@ -230,10 +251,16 @@ header{
     width: 100%;
     font-size: 1em;
 }
+
 }
 @media (max-width: 528px) {
     .contenedor-gris p{
-        font-size: .8em;
+        font-size: 1em;
+        font-weight: 500;
+    }
+    .icono-contenedor-gris img{
+        margin-top: 1.2em;
+        height: 2em;
     }
 }
 
@@ -289,8 +316,6 @@ header{
     font-size: 1.3em;
 }
 
-/* Media queries para responsividad */
-
 @media screen and (max-width: 1200px) {
     .cuadro-servicio {
         width: 45%;
@@ -303,9 +328,13 @@ header{
         width: 100%;
         margin: 0;
     }
+    .cuadro-servicio .servicio-imagen{
+        height: 40vh;
+    }
     .info, h1, p{
         text-align: center;
     }
+    .
 }
 
 /*Grid*/
